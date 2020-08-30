@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import entity.RegistrationInfo;
+import parameters.Parameters;
 
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -33,11 +34,11 @@ public class Controller extends HttpServlet {
   
 		RegistrationInfo registrationInfo = new RegistrationInfo();
 
-		registrationInfo.setLogin(request.getParameter("login"));
-		registrationInfo.setPassword(request.getParameter("password"));
-		registrationInfo.setName(request.getParameter("name"));
-		registrationInfo.setSurname(request.getParameter("surname"));
-		registrationInfo.setYearBirthday(request.getParameter("yearBirthday"));
+		registrationInfo.setLogin(request.getParameter(Parameters.LOGIN));
+		registrationInfo.setPassword(request.getParameter(Parameters.PASSWORD));
+		registrationInfo.setName(request.getParameter(Parameters.NAME));
+		registrationInfo.setSurname(request.getParameter(Parameters.SURNAME));
+		registrationInfo.setYearBirthday(request.getParameter(Parameters.YEARBIRTHDAY));
 
 		request.setAttribute("registrationInfo", registrationInfo);
 

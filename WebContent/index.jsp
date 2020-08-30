@@ -9,15 +9,15 @@
 	<form action="toController" method="post">
 		<input type="hidden" name="command" value="forward" />
 		Enter login:<br />
-		<input type="text" name="login" value="" /><br />
+		<input type="text" name="login" value="login" /><br />
 		Enter password:<br />
-		<input type="password" name="password" value="" /><br /> <br />
+		<input type="password" name="password" value="password" /><br /> <br />
 		Enter name:<br />
-		<input type="text" name="name" value="" /><br />
+		<input type="text" name="name" value="name" /><br />
 		Enter surname:<br />
-		<input type="text" name="surname" value="" /><br />
+		<input type="text" name="surname" value="surname" /><br />
 		Enter year of birth:<br />
-		<input type="text" name=yearBirthday value="" /><br /> <br />
+		<input type="text" name=yearBirthday value="1900" /><br /> <br />
 		<input type="submit" value="Submit" /><br />
 	</form>
 </body>
